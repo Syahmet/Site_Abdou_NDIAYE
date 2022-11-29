@@ -1,20 +1,28 @@
-// When the user scrolls the page, execute myFunction
-//window.onscroll = function() { myFunction() };
-
-// Get the navbar
-var navbar = document.getElementsByClassName("header");
-menu = document.getElementsByClassName("header-right");
-
-
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-menu.addEventListener("click", function() { alert("Hello World!"); });
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-    console.log("test 1");
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").style.top = "0";
     } else {
-        navbar.classList.remove("sticky");
+        document.getElementById("header").style.top = "-100px";
     }
+    prevScrollpos = currentScrollPos;
 }
+
+/* Move windon on click */
+
+herder = document.getElementsByTagName('a');
+lastScroll = 0;
+herder[0].addEventListener('click', () => {
+    window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+});
+
+herder[1].addEventListener('click', () => {
+    window.scrollTo({ left: 0, top: 500, behavior: "smooth" });
+});
+herder[2].addEventListener('click', () => {
+    window.scrollTo({ left: 0, top: document.body.scrollHeight - 500, behavior: "smooth" });
+});
+herder[3].addEventListener('click', () => {
+    window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+});
