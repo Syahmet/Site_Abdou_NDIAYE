@@ -26,3 +26,11 @@ herder[2].addEventListener('click', () => {
 herder[3].addEventListener('click', () => {
     window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
 });
+
+lastScroll = 0;
+window.aaddEventListener('scroll', () => {
+    currScroll = window.pageYOffset;
+    if (currScroll > 500) {
+        window.classList.remove('active');
+    }
+});

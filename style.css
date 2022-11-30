@@ -13,7 +13,7 @@ body {
 body {
     /* font-family: "Liu Jian Mao Cao", cursive; */
     font-family: "Montserrat", sans-serif;
-    background: #eee;
+    background: rgb(245, 245, 245);
     color: #333;
 }
 
@@ -129,50 +129,59 @@ h4 {
 }
 
 .para1_title {
-    margin-top: 10px;
+    margin-top: 200px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     color: rgb(255, 255, 255);
 }
 
 .para1 {
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
     text-align: center;
 }
 
 .para1_div {
     flex: auto;
-    background: url(./img/BG_road.jpg) center center/cover;
+    background: url(./img/BG_road3.jpeg) center center/cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
+    width: 100%;
 }
 
 
 /* Grid container pictures*/
 
+.offre {
+    background-color: #eee;
+    border-color: #ddd;
+    margin: 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .offre_title {
-    margin-top: 100px;
-    margin-left: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
+    color: darkblue;
 }
 
 .offre_para {
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .grid {
-    margin-left: 200px;
+    margin-left: 100px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -184,8 +193,8 @@ h4 {
 }
 
 .grid img {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     padding: 5px;
     border: solid;
 }
@@ -197,26 +206,42 @@ h4 {
 
 /*Contact*/
 
+.contact {
+    margin: 100px;
+    background-color: #eee;
+    border-color: #ddd;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .contact_title {
-    margin-top: 100px;
-    margin-left: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
+    color: darkblue;
 }
 
 .contact_para {
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
 }
 
-.footer1 {
+
+/*
+#horaire {
+    font-size: 20px;
+    color: darkblue;
+}*/
+
+.footer {
     background: #666;
     width: 100%;
     position: absolute;
-    height: 200px;
+    height: auto;
     padding: 10px 20px;
-    color: aliceblue;
+    color: rgb(253, 253, 253);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 100px;
 }
