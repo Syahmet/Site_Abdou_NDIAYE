@@ -28,7 +28,7 @@ herder[3].addEventListener('click', () => {
 });
 
 lastScroll = 0;
-window.aaddEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
     currScroll = window.pageYOffset;
     if (currScroll > 500) {
         window.classList.remove('active');
